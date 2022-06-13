@@ -27,7 +27,7 @@ create table if not exists users (
     id serial primary key,
     phone varchar,
     name varchar,
-    email vatchar,
+    email varchar,
     password varchar,
     constraint email_unique unique(email)
 );
@@ -39,5 +39,6 @@ create table if not exists announcement (
     created timestamp,
     user_id not null references users(id)
     car_id not null references car(id)
+
 );
 
