@@ -35,10 +35,9 @@ create table if not exists users (
 create table if not exists announcement (
     id serial primary key,
     name varchar,
-    saleStatus bool,
+    salestatus bool,
     created timestamp,
-    user_id not null references users(id)
-    car_id not null references car(id)
-
+    user_id int not null unique references users(id)
+    car_id int not null unique references car(id)
 );
 
