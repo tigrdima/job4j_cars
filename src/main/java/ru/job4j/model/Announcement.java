@@ -89,4 +89,5 @@ public class Announcement {
     public int hashCode() {
         return Objects.hash(id);
     }
+
 }

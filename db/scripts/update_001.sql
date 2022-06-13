@@ -37,7 +37,8 @@ create table if not exists announcement (
     name varchar,
     salestatus bool,
     created timestamp,
-    user_id int not null unique references users(id)
+    user_id int not null unique references users(id),
     car_id int not null unique references car(id)
+
 );
 
