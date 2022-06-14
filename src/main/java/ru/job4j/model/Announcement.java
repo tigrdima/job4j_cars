@@ -12,6 +12,8 @@ public class Announcement {
     private int id;
     private String name;
     private boolean saleStatus;
+
+    @Temporal(TemporalType.DATE)
     private Date created;
 
     @ManyToOne
